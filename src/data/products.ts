@@ -1,5 +1,7 @@
 import type { Product } from '@/types/product'
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 export const products: Product[] = [
   {
     id: 1,
@@ -10,8 +12,8 @@ export const products: Product[] = [
     description: 'Solar-Panel für private und gewerbliche Photovoltaikanlagen. Die konkreten technischen Daten erhalten Sie auf Anfrage.',
     price: null,
     priceLabel: 'Preis auf Anfrage',
-    image: '/products/solar/Drei Konige (2).jpg',
-    images: ['/products/solar/Drei Konige (2).jpg'],
+    image: publicAsset('products/solar/Drei Konige (2).jpg'),
+    images: [publicAsset('products/solar/Drei Konige (2).jpg')],
     featured: true,
     badge: 'Bestseller',
     specs: [{ label: 'Produktart', value: 'Solar-Panel' }, { label: 'Einsatz', value: 'Photovoltaikanlage' }, { label: 'Details', value: 'Auf Anfrage' }],
@@ -25,8 +27,8 @@ export const products: Product[] = [
     description: 'Ein Solar-Carport verbindet Fahrzeugschutz mit nachhaltiger Stromerzeugung. Planung und Ausführung erfolgen passend zu Ihrem Standort.',
     price: null,
     priceLabel: 'Preis auf Anfrage',
-    image: '/products/solar/Drei Konige (3).jpg',
-    images: ['/products/solar/Drei Konige (3).jpg'],
+    image: publicAsset('products/solar/Drei Konige (3).jpg'),
+    images: [publicAsset('products/solar/Drei Konige (3).jpg')],
     featured: true,
     specs: [{ label: 'Ausführung', value: 'Solarfähig' }, { label: 'Eigenschaften', value: 'Stabil & wetterfest' }, { label: 'Planung', value: 'Individuell' }],
   },
@@ -39,8 +41,8 @@ export const products: Product[] = [
     description: 'Leistungsfähiger GOKWH LiFePO4-Rackbatteriespeicher für Solar- und Energiespeichersysteme.',
     price: null,
     priceLabel: 'Preis auf Anfrage',
-    image: '/products/solar/Batteriespeicher.jpg',
-    images: ['/products/solar/Batteriespeicher.jpg'],
+    image: publicAsset('products/solar/Batteriespeicher.jpg'),
+    images: [publicAsset('products/solar/Batteriespeicher.jpg')],
     specs: [{ label: 'Spannung', value: '51,2 V' }, { label: 'Kapazität', value: '100 Ah / 5120 Wh' }, { label: 'Technologie', value: 'LiFePO4' }],
   },
   {
@@ -52,8 +54,8 @@ export const products: Product[] = [
     description: 'Kompakter GOKWH LiFePO4-Akku mit integriertem 200-A-Bluetooth-BMS für mobile und stationäre Energiesysteme.',
     price: null,
     priceLabel: 'Preis auf Anfrage',
-    image: '/products/solar/MiniAkku.jpg',
-    images: ['/products/solar/MiniAkku.jpg'],
+    image: publicAsset('products/solar/MiniAkku.jpg'),
+    images: [publicAsset('products/solar/MiniAkku.jpg')],
     specs: [{ label: 'Spannung', value: '12,8 V' }, { label: 'Kapazität', value: '320 Ah / 4096 Wh' }, { label: 'BMS', value: '200 A mit Bluetooth' }],
   },
   {
@@ -65,8 +67,8 @@ export const products: Product[] = [
     description: 'Kompakter GOKWH LiFePO4-Akku mit integriertem 200-A-Bluetooth-BMS für mobile und stationäre Energiesysteme.',
     price: null,
     priceLabel: 'Preis auf Anfrage',
-    image: '/products/solar/miniAkku2.jpg',
-    images: ['/products/solar/miniAkku2.jpg'],
+    image: publicAsset('products/solar/miniAkku2.jpg'),
+    images: [publicAsset('products/solar/miniAkku2.jpg')],
     specs: [{ label: 'Spannung', value: '12,8 V' }, { label: 'Kapazität', value: '200 Ah / 2560 Wh' }, { label: 'BMS', value: '200 A mit Bluetooth' }],
   },
   {
@@ -77,8 +79,8 @@ export const products: Product[] = [
     shortDescription: 'Robuste wiederverwendbare Flasche für Training und Alltag.',
     description: 'Isolierte Trinkflasche als Beispielprodukt für die Fitness-Kategorie.',
     price: 24.9,
-    image: '/products/toofeel/toofeel3.jpeg',
-    images: ['/products/toofeel/toofeel3.jpeg'],
+    image: publicAsset('products/toofeel/toofeel3.jpeg'),
+    images: [publicAsset('products/toofeel/toofeel3.jpeg')],
     featured: true,
     specs: [{ label: 'Volumen', value: '750 ml' }, { label: 'Material', value: 'Edelstahl' }, { label: 'Isoliert', value: 'Ja' }],
   },
@@ -90,8 +92,8 @@ export const products: Product[] = [
     shortDescription: 'Praktischer Shaker mit dichtem Schraubverschluss.',
     description: 'Ein einfacher Platzhalter für Sport- und Fitnesszubehör.',
     price: 14.9,
-    image: '/products/toofeel/toofeel1 .jpeg',
-    images: ['/products/toofeel/toofeel1 .jpeg', '/products/toofeel/toofeel2.jpeg'],
+    image: publicAsset('products/toofeel/toofeel1 .jpeg'),
+    images: [publicAsset('products/toofeel/toofeel1 .jpeg'), publicAsset('products/toofeel/toofeel2.jpeg')],
     specs: [{ label: 'Volumen', value: '600 ml' }, { label: 'BPA-frei', value: 'Ja' }, { label: 'Spülmaschine', value: 'Geeignet' }],
   },
   {
